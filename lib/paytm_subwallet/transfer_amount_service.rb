@@ -8,13 +8,16 @@ module PaytmSubwallet
     def get_response(query)
       raise PaytmSubwallet::NotConfiguredError unless PaytmSubwallet::configuration.valid?
 
-      api_response = Api::TransferAmount.new.get_response(query)
+      # api_response = Api::TransferAmount.new.get_response(query)
+
 
 
     end
 
     def call(paytm_assignable, amount)
-
+      # save request
+      # api call
+      # save response
     end
 
     private
@@ -35,7 +38,7 @@ module PaytmSubwallet
         "currencyCode"=> "INR"
         },
         "metadata"=> "Testing Data",
-        "ipAddress"=> “127.0.0.1”,
+        "ipAddress"=> "",# search rails method for getting public ip
         "platformName"=> "PayTM",
         "operationType"=> "SALES_TO_USER_CREDIT"
       }

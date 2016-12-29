@@ -7,25 +7,26 @@ module PaytmSubwallet
 
       def construct
         {
+          'content-type' => 'application/json',
           'checksumhash' => generate_checksum,
-          'mid' => merchant_id
+          'mid' => merchant_id,
         }
       end
 
       def aes_key
-        PaytmSubwallet::Configuration.aes_key
+        PaytmSubwallet::configuration.aes_key
       end
 
       def merchant_id
-        PaytmSubwallet::Configuration.merchant_id
+        PaytmSubwallet::configuration.merchant_id
       end
 
       def merchant_guid
-        PaytmSubwallet::Configuration.merchant_guid
+        PaytmSubwallet::configuration.merchant_guid
       end
 
       def sales_wallet_guid
-        PaytmSubwallet::Configuration.sales_wallet_guid
+        PaytmSubwallet::configuration.sales_wallet_guid
       end
 
       def generate_checksum
