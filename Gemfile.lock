@@ -3,7 +3,7 @@ PATH
   specs:
     paytm_subwallet (0.0.1)
       mysql2
-      rails (~> 4.2.5)
+      rails (>= 4.0)
 
 GEM
   remote: https://rubygems.org/
