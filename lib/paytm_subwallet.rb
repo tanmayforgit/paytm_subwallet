@@ -1,4 +1,6 @@
 require "paytm_subwallet/engine"
+require_relative "paytm_subwallet/assignable"
+require_relative "paytm_subwallet/configuration"
 
 module PaytmSubwallet
   def self.configuration
