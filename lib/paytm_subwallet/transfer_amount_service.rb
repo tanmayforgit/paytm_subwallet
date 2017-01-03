@@ -1,5 +1,5 @@
 require 'open-uri'
-
+require_relative './service_routine'
 module PaytmSubwallet
   class TransferAmountService
     def initialize(paytm_assignable, amount)
